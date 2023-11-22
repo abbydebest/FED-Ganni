@@ -29,7 +29,7 @@ Surface plane
 ### Je website
 
 <details open>
-  <summary>uitwerken voor kick-off werkgroep</summary>
+  <summary>Uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
 
@@ -38,19 +38,19 @@ ganni.com
 #### Screenshot(s) van de eerste pagina (small screen):
 
 ganni home pagina 
- <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+ <img src="readme-images/screencapture-ganni-home.png" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 
 ganni 
- <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+ <img src="readme-images/screenshot-ganni-newin.png" width="375px" alt="omschrijving van de pagina">
 
 </details>
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
 <details>
-  <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
+  <summary>Uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
 ### Bevindingen
 
@@ -58,6 +58,14 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 <ul>
 <li>Veelal de tekst is vaag, zo is er wel alt tekst, maar niet goed beschreven.</li>
 <li>De website is best redelijk te gebruiken met een screen reader, maar bijna niet met het toetsenbord.</li>
+<li>Horizontaal scrollen kan niet uitgezet worden.</li>
+<li>Button en link iconen zijn niet altijd even goed klikbaar op de mobiele site.</li>
+<li>H1 wordt meerdere keren op pagina's gebruikt en worden in verkeerde volgorde gebruikt of over geslagen.</li>
+<li>Er is alt tekst, maar bevat niet de tekst op of bijbehorend aan de afbeelding, het is vaak nietszeggend en zal niet duidelijk voor blinden.</li>
+<li>Decoratieve afbeeldingen bevatten WEL alt tekst.</li>
+<li>Media kan niet gepauzeerd worden en heeft geen captions.</li>
+<li>Links zijn niet herkenbaar als links, controls hebben geen :focus state en er wordt niet duidelijk gemaakt wanneer een link in een nieuwe tab opent.</li>
+<li>Dark mode, high-contrast mode en increased text zijn niet ondersteund.</li>
 </ul>
 
 </details>
@@ -65,30 +73,35 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 ## Breakdownschets (week 1)
 
 <details>
-  <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
+  <summary>Uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
 ### de hele pagina:
 
-  <img src="readme-images/screencapture-ganni-en-nl-home-2023-11-20-21_21_45.pngscreencapture-ganni-en-nl-home-2023-11-20-21_21_45.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/screencapture-ganni-home.png" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu):
 
-  <img src="readme-images/Screenshot 2023-11-21 at 09.37.49.png" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/screenshot-ganni-newin.png" width="375px" alt="breakdown van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter):
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
 ## Voortgang 1 (week 2)
 
 <details>
-  <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
+  <summary>Uitwerken voor 1<sup>e</sup> voortgang</summary>
 
 ### Stand van zaken
 
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Dit ging goed:
+
+Dit was lastig:
+
+
+(neem ook screenshots op van delen van je website en code)
 
 ### Agenda voor meeting
 
