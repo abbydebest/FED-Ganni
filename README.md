@@ -54,7 +54,7 @@ ganni
 
 ### Bevindingen
 
-WCAG test: <a href="/Users/abbydebest/Documents/SCHOOL💻/JAAR 2👋🏻/BLOK 2/Github/FED-Ganni/FED_23-24-Blok2-WCAG checklist.pdf">
+<a href="/Users/abbydebest/Documents/SCHOOL💻/JAAR 2👋🏻/BLOK 2/Github/FED-Ganni/FED_23-24-Blok2-WCAG checklist.pdf">WCAG test</a>
 
 Lijst met je bevindingen die in de test naar voren kwamen:
 <ul>
