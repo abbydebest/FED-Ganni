@@ -15,17 +15,59 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text:#000000;
+	--color-background:#ffffff;
+	--accent-color: #F1F1F1;
 }
 
 
 
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica Neue';
+	font-weight: 500;
+	color: var(--color-text);
+	font-size: .8750em;
+	text-transform: uppercase;
+}
 
+header {
+	width: 100vw;
+}
 
-/****************/
-/* JOUW STYLING */
-/****************/
+section:first-of-type {
+	height: 42px;
+	background-color: var(--accent-color);
+}
 
-/* jouw code */
+nav {
+	height: 107px;
+}
 
+ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: flex;
+	height: 28px;
+	flex-grow: 1;
+	flex-basis: 10em;
+}
+
+a:visited {
+	color: var(--color-text);
+
+}
+
+.search {
+
+	background-color: var(--color-background);
+	border: 3px #000000;
+}

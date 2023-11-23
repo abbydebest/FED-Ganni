@@ -54,12 +54,15 @@ ganni
 
 ### Bevindingen
 
+WCAG test: <a href="/Users/abbydebest/Documents/SCHOOL💻/JAAR 2👋🏻/BLOK 2/Github/FED-Ganni/FED_23-24-Blok2-WCAG checklist.pdf">
+
 Lijst met je bevindingen die in de test naar voren kwamen:
 <ul>
 <li>Veelal de tekst is vaag, zo is er wel alt tekst, maar niet goed beschreven.</li>
 <li>De website is best redelijk te gebruiken met een screen reader, maar bijna niet met het toetsenbord.</li>
 <li>Horizontaal scrollen kan niet uitgezet worden.</li>
 <li>Button en link iconen zijn niet altijd even goed klikbaar op de mobiele site.</li>
+<li>Er wordt vaak helemaal geen p of headings gebruikt voor tekst.</li>
 <li>H1 wordt meerdere keren op pagina's gebruikt en worden in verkeerde volgorde gebruikt of over geslagen.</li>
 <li>Er is alt tekst, maar bevat niet de tekst op of bijbehorend aan de afbeelding, het is vaak nietszeggend en zal niet duidelijk voor blinden.</li>
 <li>Decoratieve afbeeldingen bevatten WEL alt tekst.</li>
@@ -77,7 +80,7 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 
 ### de hele pagina:
 
-  <img src="readme-images/screencapture-ganni-home.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/FED_Ganni_breakdown_AbbydeBest.png" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu):
 
@@ -97,9 +100,12 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 ### Stand van zaken
 
 Dit ging goed:
+Het meteen structureren van mijn bestanden, tijdens het coderen.
+De flexbox oefeningen gingen me erg makkelijk af, die kennis heb ik goed onthouden van vorig jaar.
+GitHub repositories problemen kunnen oplossen.
 
 Dit was lastig:
-
+Mijn kennis van coderen was/is erg weggezakt. Op gang komen was hierdoor ook erg moeilijk.
 
 (neem ook screenshots op van delen van je website en code)
 
