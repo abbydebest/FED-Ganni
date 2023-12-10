@@ -96,6 +96,7 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 
 <details>
   <summary>Uitwerken voor 1<sup>e</sup> voortgang</summary>
+Deel menu hidden bij klein scherm, list items ging niet helemaal goed, > gebruiken
 
 ### Stand van zaken
 
@@ -105,28 +106,23 @@ De flexbox oefeningen gingen me erg makkelijk af, die kennis heb ik goed onthoud
 GitHub repositories problemen kunnen oplossen.
 
 Dit was lastig:
-Mijn kennis van coderen was/is erg weggezakt. Op gang komen was hierdoor ook erg moeilijk.
+Mijn kennis van coderen was/is erg weggezakt. Op gang komen was hierdoor ook erg moeilijk. Verder had ik eigenlijk alleen maar kleine en praktische vragen die ik heb gesteld of opgezocht.
 
 (neem ook screenshots op van delen van je website en code)
 
 ### Agenda voor meeting
 
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| -------------- | ------------------ | ------------ | ---------------- |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Vragen:
+<ul>
+<li>Hoe menu beter/handiger indelen?</li>
+<li>Hoe ook alweer typografie op hele bestand toepassen?</li>
+<li>Hoe ook alweer geen margin en padding op hele bestand toepasseen?</li>
+</ul>
 
 ### Verslag van meeting
 
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+<img src="/images/progress/Week1-begin-eerstemenu.png">
+<img src="/images/progress/Week2-verbeterd-menu.png">
 
 </details>
 
@@ -134,6 +130,12 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 <details>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
+  grid toepassen op banner
+  .shop stukjes opmaken, svg kleur veranderen met filter, pijl goede grootte krijgen met a
+  gallery position relative en absolute
+  carousel in gallery flexbox, wat is beste manier om dezelfde opmaak/css toe te passen, bij carousel opmaak/css erbij zetten en specifieker maken.
+  rest html toevoegen/opmaken en positioneren
+  Footer, ul li ul li a
 
 ### Stand van zaken
 
@@ -175,6 +177,11 @@ Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er v
 
 <details>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
+  ticker
+  menu werkend maken
+  ordenen
+  aria labels & alt tekst
+  tweede pagina
 
 ### Stand van zaken
 

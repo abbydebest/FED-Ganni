@@ -14,6 +14,7 @@
 	
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
 </head>
 
 <!-- ///////////////////-->
@@ -22,8 +23,12 @@
 
 <body>
 	<header>
-		<section>
-			<p>Our new pre-spring 24 collection is here 🩰🎀 enjoy free standard shipping on orders over €200</p>
+		<section class="ticker">
+			<section class="wrapper">
+				<article class="transition">
+					<p>Our new pre-spring 24 collection is here 🩰🎀 enjoy free standard shipping on orders over €200</p>
+				</article>
+			</section>
 		</section>
 		<nav>
 			<ul>
@@ -31,60 +36,465 @@
 					<img src="images/Ganni-logo.svg" alt="Direct to home page ganni, with ganni logo">
 				</li>
 				<li>
-					<ul>
-						<li>
-							<a href="">New in</a>
-						</li>
-						<li>
-							<a href="">
-								<p>Clothing</p>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<p>Dresses</p>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<p>Shoes</p>
-							</a>
-						</li>	
-						<li>
-							<a href="">
-								<p>Bags</p>
-							</a>
-						</li>	
-						<li>
-							<a href="">
-								<p>Accessoires</p>
-							</a>
-						</li>	
-						<li>
-							<a href="">Ganni <span>icons</span>
-							</a>
-						</li>	
-						<li>
-							<a href="">
-								<p>Ganni gifts</p>
-							</a>
-						</li>		
-					</ul>
-				</li>
-				<li class="icons">
-					<img src="images/Heart-small.svg" alt="Go to your wishlist/favorites page">
-					<img src="images/Profile.svg" alt="Go to your profile page">
-					<img src="images/Shoppingbag.svg" alt="Go to your shopping bag page">
+					<a href="">New in</a>
 				</li>
 				<li>
-					<button class="search">
-						<p>Search</p>
-					</button>
+					<a href="">Clothing</a>
+				</li>
+				<li>
+					<a href="">Dresses</a>
+				</li>
+				<li>
+					<a href="">Shoes</a>
+				</li>	
+				<li>
+					<a href="">Bags</a>
+				</li>	
+				<li>
+					<a href="">Accessoires</a>
+				</li>	
+				<li>
+					<a href="">Ganni</a>
+				</li>	
+				<li>
+					<a href="">Ganni gifts</a>
+				</li>	
+				<li>
+					<!-- 🔥 UL in een li om navigatie elementen makkelijk apart van de rest va het menu te selecteren en te manipuleren.🔥 -->
+					<!-- 🔥 Class 'icons' gebruitk om in css te kunnen slecteren.🔥 -->
+					<ul class="icons">
+						<li>
+							<a href=""><img src="images/Heart-small.svg" alt="Go to your wishlist/favorites page"></a>
+						</li>
+						<li>
+							<a href=""><img src="images/Profile.svg" alt="Go to your profile page"></a>
+						</li>	
+						<li>
+							<a href=""><img src="images/Shoppingbag.svg" alt="Go to your shopping bag page"></a>
+						</li>
+						<li>
+							<a href=""><img src="images/Menu.svg" alt="Menu button to open menu and navigate"></a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<form action="">Search <img src="/images/Unknown-4.svg" alt=""></form>
 				</li>
 			</ul>
 		</nav>
 	</header>
-	<h1>Our new collection is here!</h1>
+	<section class="banner">
+		<img src="/images/Gannibanner.jpeg" alt="">
+		<h1>Our new collection is here!</h1>
+		<a href="" class="shop">
+			<h2>Shop new in</h2>
+			<img src="/images/Arrowright.svg" alt="">
+		</a>
+	</section>
+	<section class="slider">
+		<h3>New in</h3>
+			<article class="slides">
+				<button><img src="/images/Left.svg" alt=""></button>
+				<article>
+					<a href="">
+						<img src="/images/F8683-019-1.jpg" alt="">
+						<h4>Brown brushed alpaca o-neck sweater</h4>
+						<h4>€225</h4>
+					</a>
+					<p>New</p>
+					<button>Add to bag</button>
+				</article>
+				<article>
+					<a href="">
+						<img src="images/J1376-091-1.jpg" alt="">
+						<h4>Leopard betzy cropped jeans</h4>
+						<h4>€195</h4>
+					</a>
+					<p>New</p>
+					<button>Add to bag</button>
+				</article>
+				<article>
+					<a href="">
+						<img src="/images/J1059-943-1.jpg" alt="">
+						<h4>Tint denim mini dress</h4>
+						<h4>€225</h4>
+					</a>
+					<p>New</p>
+					<p>Ganni icon</p>
+					<button>Add to bag</button>
+				</article>
+				<article>
+					<a href="">
+						<img src="/images/F8544-099-1.jpg" alt="">
+						<h4>Oversized tech puffer coat</h4>
+						<h4>€495</h4>
+					</a>
+					<button>Add to bag</button>
+				</article>
+				<article>
+					<button></button>
+					<a href="">
+						<img src="/images/J1352-055-1.jpg" alt="">
+						<h4>Snow washed denim angi jeans</h4>
+						<h4>€275</h4>
+					</a>
+					<button>Add to bag</button>
+				</article>
+				<article>
+					<a href="">
+						<img src="/images/F9182-016-1.jpg" alt="">
+						<h4>Streched striped belt blazer</h4>
+						<h4>€395</h4>
+					</a>
+					<p>New</p>
+					<p>Exclusive</p>
+					<button>Add to bag</button>
+				</article>
+				<button><img src="/images/Right.svg" alt=""></button>
+			</article>
+			<a href="" class="shop">
+				<h4>Shop now</h4>
+				<img src="/images/Arrowright.svg" alt="">
+			</a>
+	</section>
+	<section class="gallery">
+		<article>
+			<a href="">
+				<img src="/images/09_STILL_LIFE_GANNI_0218__5500px.jpg" alt="">
+				<a href="">shop shoes</a>
+			</a>
+		</article>
+		<article>
+			<a href="">
+				<img src="/images/wk48bags2.jpg" alt="">
+				<a href="">shop bags</a>
+			</a>
+		</article>
+		<article>
+			<a href="">
+				<img src="/images/ps-24-07.jpg" alt="">
+				<a href="">shop now</a>
+			</a>
+		</article>
+		<article>
+			<a href="">
+				<h5>Icons only</h5>
+				<h6>These are the pieces to have on your radar now and forever</h6>
+			</a>
+		</article>
+		<section class="slider">
+			<article class="slides">
+			<article>
+				<a href="">
+					<img src="/images/S2427-018-1.jpg" alt="">
+					<h4>Silver mid shaft embroidered western boots</h4>
+					<h4>€645</h4>
+				</a>
+				<p>Coming soon</p>
+				<button>Add to bag</button>
+			</article>
+			<article>
+				<a href="">
+					<img src="/images/F8625-494-1.jpg" alt="">
+					<h4>3D sequins maxi dress</h4>
+					<h4>€545</h4>
+				</a>
+				<button>Add to bag</button>
+			</article>
+			<article>
+				<a href="">
+					<img src="/images/A5379-099-1.jpg" alt="">
+					<h4>Black mini ganni bou bag</h4>
+					<h4>€295</h4>
+				</a>
+				<button>Add to bag</button>
+			</article>
+			<article>
+				<a href="">
+					<img src="/images/T3768-151-1.jpg" alt="">
+					<h4>White relaxed lemon t-shirt</h4>
+					<h4>€110</h4>
+				</a>
+				<p>Extended sizing</p>
+				<button>Add to bag</button>
+			</article>
+			<article>
+				<a href="">
+					<img src="/images/A5369-196-1.jpg" alt="">
+					<h4>Sand fitted wool rib knit beanie</h4>
+					<h4>€75</h4>
+				</a>
+				<button>Add to bag</button>
+			</article>
+			<article>
+				<a href="">
+					<img src="/images/J1371-055-1.jpg" alt="">
+					<h4>Snow washed denim a-line mini dress</h4>
+					<h4>€265</h4>
+				</a>
+				<button>Add to bag</button>
+			</article>
+		</article>
+	</section>
+		<a href="" class="shop">
+			<h2>Shop icons</h2>
+			<img src="/images/Arrowright.svg" alt="">
+		</a>
+	</section>
+	<section class="shopthelook">
+		<h2>Shop the look</h2>
+		<section class="slider">
+			<article class="slides">
+				<article>
+					<a href="">
+						<img src="/images/F8683-019-1.jpg" alt="">
+					</a>
+					<button>Shop now</button>
+				</article>
+				<article>
+					<a href="">
+						<img src="images/F8829-099-1.jpg" alt="">
+					</a>
+					<button>Shop now</button>
+				</article>
+				<article>
+					<a href="">
+						<img src="/images/F8861-859-1.jpg" alt="">
+					</a>
+					<button>Shop now</button>
+				</article>
+				<article>
+					<a href="">
+					</a>
+					<button>Shop now</button>
+				</article>
+				<article>
+					<a href="">
+						<img src="" alt="">
+					</a>
+					<button>Shop now</button>
+				</article>
+				<article>
+					<a href="">
+						<img src="" alt="">
+					</a>
+					<button>Shop now</button>
+				</article>
+			</article>
+		</section>
+		<a href="" class="shop">
+			<h2>Shop the look</h2>
+			<img src="/images/Arrowright.svg" alt="">
+		</a>
+	</section>
+	<section class="ganniworld">
+		<article>
+			<a href="">
+				<img src="/images/hp-image-03.jpg" alt="">
+			</a>
+			<h6>Ganni world</h6>
+			<h6>Discover the GANNI universe with style and everyday inspiration from our GANNI Girl community</h6>
+			<a href="" class="shop">
+					<h2>Discover more</h2>
+					<img src="/images/Arrowright.svg" alt="">
+			</a>
+		</article>
+		<article>
+			<a href="">
+			<img src="/images/hp-image-04.jpg" alt="">
+			</a>
+			<h6>Come say hi</h6>
+			<h6>Head to your local store where Team GANNI will walk you through our latest collections + hottest arrivals and get inspired by their new season favourites</h6>
+			<a href="" class="shop">
+					<h2>Find store</h2>
+					<img src="/images/Arrowright.svg" alt="">
+			</a>
+		</article>
+		<article>
+			<a href="">
+			<img src="/images/hp-image-02.jpg" alt="">
+			</a>
+			<h6>Our journey to do better</h6>
+			<h6>Our focus is becoming the most responsible version of ourselves. GANNI's Fabics of The Future initiative helps us explore designing with alternative annovative fabrics.</h6>
+			<a href="" class="shop">
+				<h2>Learn more</h2>
+				<img src="/images/Arrowright.svg" alt="">
+			</a>
+		</article>
+	</section>
+	<footer>
+		<ul>
+			<li>
+				<ul class="align">
+					<li>
+						<a href="">
+						<img src="/images/icon1.svg" alt="">
+						<h6>Need help?</h6>
+						</a>
+					</li>
+					<li>
+						<a href="">
+						<img src="/images/icon2.svg" alt="">
+						<h6>Delivery</h6>
+						</a>
+					</li>
+					<li>
+						<a href="">
+						<img src="/images/icon3.svg" alt="">
+						<h6>Free returns</h6>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="accentcolor">
+				<ul>
+					<li>
+						<h6>Sign up below and recieve 10% off your first order, be the first to know about our latest collection launches, gain early access to new products and collaborations, and recieve event invitations</h6>
+					</li>
+					<li>
+						<input type="email" placeholder="Enter your email address" class="email">
+						<input type="submit" value="" class="submit">
+					</li>
+					<li>
+						<p>10% off is only available for first-time subscribers and can't be used on collaborations or other discounts and sale. You can withdraw your consent at any time. Read about how we process your personal data in our Privacy Policy.</p>
+					</li>
+				</ul>
+			</li>
+			<li class="footernav">
+				<ul>
+					<li>
+						<a href="">Help and information</a>
+					</li>
+					<li>
+						<a href="">Delivery</a>
+					</li>
+					<li>
+						<a href="">Returns</a>
+					</li>
+					<li>
+						<a href="">Contact us</a>
+					</li>
+					<li>
+						<a href="">Store locator</a>
+					</li>
+					<li>
+						<a href="">E-giftcard</a>
+					</li>
+				</ul>
+			</li>
+			<li class="footernav">
+				<ul>
+					<li>
+						<a href="">Terms & conditions</a>
+					</li>
+					<li>
+						<a href="">Privacy policy</a>
+					</li>
+					<li>
+						<a href="">Cookie policy</a>
+					</li>
+					<li>
+						<a href="">Cookie settings</a>
+					</li>
+					<li>
+						<a href="">Press</a>
+					</li>
+					<li>
+						<a href="">Careers</a>
+					</li>
+				</ul>
+			</li>
+			<li class="footernav">
+				<ul>
+					<li>
+						<a href="">Responsibility</a>
+					</li>
+					<li>
+						<a href="">2022 Responsibility report</a>
+					</li>
+					<li>
+						<a href="">2021 Responsibility report</a>
+					</li>
+					<li>
+						<a href="">2020 Responsibility report</a>
+					</li>
+					<li>
+						<a href="">Repack</a>
+					</li>
+				</ul>
+			</li>
+			<li class="footernav">
+				<ul>
+					<li>
+						<a href="">Ganni  world</a>
+					</li>
+					<li>
+						<a href="">cphfw ss24</a>
+					</li>
+					<li>
+						<a href="">cphfw fw23</a>
+					</li>
+					<li>
+						<a href="">cphfw ss23</a>
+					</li>
+					<li>
+						<a href="">student rewards</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<ul class="bcorp">
+					<li>
+						<a href="">
+							we're b-corp certified!
+							<img src="images/B-Corp-Logo-Black-RGB-kopi.svg" alt="B-Corp certification logo">
+						</a>
+					</li>
+					<li>
+						<img src="" alt="">
+					</li>
+				</ul>
+			</li>
+			<li>
+				<ul>
+					<li class="country">
+						<label for="country">Country / Currency</label>
+						<select name="country" id="country">
+							<option value="nederlands">Nederlands / € (EUR)</option>
+							<option value="engels">English / ￡ (GBP)</option>
+						</select>
+					</li>
+					<li class="language">
+						<label for="language">Language</label>
+						<select name="language" id="language">
+							<option value="english">English</option>
+							<option value="english">Nederlands</option>
+						</select>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<ul class="socials">
+					<li>
+						<a href=""><img src="/images/Instagram.svg" alt=""></a>
+					</li>
+					<li>
+						<a href=""><img src="/images/Unknown-10.svg" alt=""></a>
+					</li>
+					<li>
+						<a href=""><img src="/images/Unknown-9.svg" alt=""></a>
+					</li>
+					<li>
+						<a href=""><img src="/images/Youtube.svg" alt=""></a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+	</footer>
+
+	
+
 
 	<script defer src="scripts/script.js"></script>
 </body>
