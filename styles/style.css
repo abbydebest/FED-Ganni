@@ -25,8 +25,11 @@ a:visited {
 	color: var(--color-text);
 }
 
-ul {
+ul,
+li {
 	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 body,
@@ -35,7 +38,7 @@ h4,
 button {
 	margin: 0;
 	padding: 0;
-	font-family: 'Helvetica Neue';
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	font-weight: var(--font-weight-medium);
 	color: var(--color-text);
 	font-size: .8750rem;
@@ -62,18 +65,51 @@ header {
 	width: 100vw;
 }
 
-/* TICKER */
+button {
+	border: none;
+	background-color: transparent;
+}
+
+/* /////////////////// */
+/* 🎞️🎞️🎞️ TICKER 🎞️🎞️🎞️ */
+/* /////////////////// */
+
 header section.ticker {
 	height: auto;
 	width: 100%;
 	background-color: var(--accent-color);
 	overflow: hidden;
+	position: relative;
+}
+
+header section.ticker section:last-of-type {
+	display: grid;
+	z-index: 1;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 9%;
+	position: absolute;
+	align-items: center;
+	background: linear-gradient(-90deg,var(--header-slot-bg,#F1F1F1),var(--header-slot-bg,#F1F1F1),var(--header-slot-bg,#F1F1F1),transparent);
+}
+
+header section.ticker button {
+	width: 100%;
+	height: 100%;
+}
+
+header section.ticker button img {
+	width: 1rem;
+	height: 1rem;
+	
 }
 
 header section.wrapper {
-	width: 100%;
+	width: 100vw;
 	padding: 0 0 0 100%;
 	background-color: transparent;
+	position: relative;
 }
 
 /* TICKER ANIMATION */
@@ -108,7 +144,7 @@ header p {
 	font-size: .75rem;
 }
 
-nav ul {
+nav ul.menu-small {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -117,7 +153,8 @@ nav ul {
 	padding: .4rem .625rem .635rem .625rem;
 }
 
-nav ul li:first-of-type img {
+nav ul.menu-small li:first-of-type img,
+nav section:last-of-type article ul:first-of-type li:first-of-type img {
 	height: 1.75rem;
 	width: auto;
 }
@@ -148,17 +185,19 @@ nav ul.icons{
 	gap: 1.25rem;
 }
 
-nav ul.icons li:first-of-type a img{
+nav ul.icons li:first-of-type a img, 
+nav ul.icons li:first-of-type button img {
 height: 1.438rem;
 width: 1.438rem;
 }
 
-nav ul.icons li a img{
+nav ul.icons li a img,
+nav ul.icons li button img {
 	height: 1.25rem;
 	width: 1.25rem;
 	}
 
-nav > ul > li:last-child {
+nav > ul.menu-small > li:last-child {
 	background-color: var(--color-background);
 	border: 1px solid #000000;
 	padding: .5rem .65rem .375rem .438rem;
@@ -166,28 +205,163 @@ nav > ul > li:last-child {
 }
 
 form {
-	display: block;
 	color: #bcbcbc;
 	font-size: 1.375rem;
 	display: flex;
 	justify-content: space-between;
 }
 
-form img {
+form img,
+nav section:first-of-type ul li img {
 	width: auto;
 	height: 1.563rem;
 }
 
-/* section.banner,
-section.slider:first-of-type
-section.gallery,
-section.icons,
-section.ganniworld {
-	margin: 0 0 .8rem 0;
-} */
+nav section:first-of-type.hidden,
+nav section:last-of-type.hidden {
+	display: none;
+}
+
+/* Search bar open */
+nav section:first-of-type {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,.35);
+	padding: 0;
+	position: fixed;
+	display: block;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 3;
+}
+
+nav section:first-of-type p {
+	font-size: .875rem;
+	padding: 0;
+}
+
+nav section:first-of-type a {
+	font-size: 1.375rem;
+}
+
+nav section:first-of-type article {
+	background-color: var(--color-background);
+	width: 100vw;
+	height: fit-content;
+	padding: .5rem .625rem 1.25rem .625rem;
+}
+
+nav section:first-of-type article ul:first-of-type {
+	display: flex;
+	gap: .5rem;
+	align-items: center;
+}
+
+nav section:first-of-type article ul:nth-of-type(2),
+nav section:first-of-type article ul:last-of-type {
+	margin: 2.5rem 0 0 0;
+}
+
+nav section:first-of-type article ul:first-of-type li:first-of-type {
+	flex-grow: 1;
+}
+
+nav section:first-of-type article ul:first-of-type li:first-of-type input {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	padding: 0;
+	width: 100%;
+	height: 1.688rem;
+	font-size: 1.375rem;
+	font-weight: var(--font-weight-medium);
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+nav section:first-of-type article ul:first-of-type li:first-of-type input::placeholder{
+	color: #bcbcbc;
+}
+
+/* Menu open */
+nav section:last-of-type {
+	width: 100vw;
+	height: 100vh;
+	display: block;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: .63rem;
+	background-color: rgba(0,0,0,.35);
+}
+
+nav section:last-of-type article {
+	background-color: var(--color-background);
+	display: grid;
+	width: 100%;
+	height: fit-content;
+	padding: 1.25rem;
+	position: relative;
+}
+
+nav section:last-of-type article ul {
+	display: flex;
+	align-self: end;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: start;
+}
+
+nav section:last-of-type article ul:nth-of-type(2) {
+	font-size: 2.25rem;
+	line-height: 1;
+	margin: 2rem 0 0 0;
+}
+
+nav section:last-of-type article ul:nth-of-type(2) li {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	width: 100%;
+}
+
+nav section:last-of-type article ul:nth-of-type(2) a:nth-of-type(2) {
+    position: absolute;
+	right: 0;
+	top: 30%;
+    transform: translate(-auto,-50%);
+    border-bottom:7px solid transparent;border-left:7px solid #000;border-top:7px solid transparent;content:"";height:0;width:0
+}
+
+nav section:last-of-type article ul:nth-of-type(2) li:last-of-type a:first-of-type {
+	color: #ED0000;
+}
+
+nav section:last-of-type article ul:last-of-type {
+	gap: 1.25rem;
+	margin: 3.167rem 0 0 0;
+}
+
+nav section:last-of-type article button {
+	position: absolute;
+	right: .625rem;
+	top: .625rem;
+}
+
+nav section:last-of-type article button img {
+	width: 3.25rem;
+	height: 3.25rem;
+}
 
 /* /////////////////// */
-/* 💗💗💗 Banner 💗💗💗 */
+/* 💗💗💗 BANNER 💗💗💗 */
 /* /////////////////// */
 
 section.banner {
@@ -288,7 +462,17 @@ section.gallery article.slides {
 	position: relative;
 }
 
-/* Flexbox op individuele articles in carouzel */
+article.slides::-webkit-scrollbar,
+section.gallery article.slides::-webkit-scrollbar {
+	display: none;
+}
+
+section.slider article.slides article,
+section.gallery section.slides article {
+	position: relative;
+}
+
+/* Flexbox op individuele articles in carousel */
 article.slides article,
 section.gallery article.slides article {
 	display: flex;
@@ -301,41 +485,61 @@ section.gallery article.slides article {
 
 /* Grootte img in carousel */
 article.slides img,
-section.gallery article.slides img {
+section.gallery article.slider article.slides img {
 	height: auto;
 	object-fit: cover;
 	width: 9rem;
 }
 
-/* Buttons carousel */
-article.slides > button:first-of-type,
-section.gallery article.slides > button:first-of-type {
-	background-color: none;
+/* Navigatie buttons carousel */
+article.slides > a:first-of-type,
+section.gallery article.slides > a:first-of-type {
+	background-color: transparent;
 	border: none;
 	padding: .2em;
 	height: 1.5em;
 	position: absolute;
 	left: 0;
 	top: 50%;
+	z-index: 1;
 }
 
-article.slides > button:nth-of-type(2),
-section.gallery article.slides > button:nth-of-type(2) {
-	background-color: none;
+article.slides > a:nth-of-type(2),
+section.gallery article.slides > a:nth-of-type(2) {
+	background-color: transparent;
 	border: none;
 	padding: .2em;
 	height: 1.5em;
 	position: absolute;
 	right: 0;
 	top: 50%;
+	z-index: 1;
 }
 
-/* Navigatie knoppen carousel */
-article.slides button img,
-section.gallery article.slides button img {
+article.slides > a img,
+section.gallery article.slides > a img {
 	object-fit: cover;
 	height: 1.5em;
 	width: auto;
+}
+
+/* Like button */
+section.slider article.slides article button:first-of-type,
+section.gallery section.slider article.slides article button:first-of-type  {
+	border: none;
+	background-color: transparent;
+	position: absolute;
+	right: 0;
+	padding: .3125rem;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+section.slider article.slides article button:first-of-type img,
+section.gallery section.slider article.slides article button:first-of-type img {
+	width: 1.875rem;
+	height: 1.875rem;
+	object-fit: contain;
 }
 
 /* Geaccentueerde p's in articles */
@@ -349,14 +553,15 @@ section.gallery article.slides button img {
 	margin: 0 0 1em 0;
 }
 
-/* Button opmaak carousel */
-button,
-section.gallery a:nth-of-type(2) {
+/* 'Add to bag' button opmaak carousel */
+article.slides article button:nth-of-type(2),
+section.gallery a p {
 	background-color: var(--color-background);
 	border: 1px solid var(--color-text);
-	font-size: 1em;
+	font-size: .875rem;
 	padding: 12px;
 	text-align: start;
+	margin: 0;
 }
 
 /* //////////////////// */
@@ -369,18 +574,17 @@ section.gallery a:nth-of-type(2) {
 	gap: 1.25rem;
 }
 
-section.gallery a:nth-of-type(2) {
+section.gallery a p {
 	position: absolute;
 	right: 1em;
 	bottom: 1em;
 }
 
-section.gallery article,
-section.gallery article img {
+section.gallery article.image {
 	position: relative;
 }
 
-section.gallery article img,
+section.gallery article.image img,
 section.ganniworld article a img {
 	height: auto;
 	width: 100%;
@@ -418,11 +622,25 @@ section.shopthelook section.slider article.slides article {
 section.shopthelook section.slider article.slides button {
 	border: none;
 	padding: 0;
+	position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin: 1rem 0 0 0;
 }
 
 /* //////////////////////// */
 /* 🍸🍸🍸 GANNI world 🍸🍸🍸 */
 /* //////////////////////// */
+section.ganniworld {
+	display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+	margin-bottom: 2.5rem;
+}
+
+section.ganniworld h6 {
+	margin-top: .625rem;
+}
 
 /* Alle eerste H6'en in de articles volledig in hoofdletters */
 section.ganniworld article h6:first-of-type,
@@ -488,10 +706,11 @@ input.email {
 	border: none;
 	transition: all .15s ease-in 0s;
 	box-shadow: none;
+	outline: none;
 	padding: .625rem .625rem .625rem 0;
 	height: 2.75rem;
 	width: 100%;
-	font-family: 'Helvetica Neue';
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	font-size: 1.25rem;
 	font-weight: var(--font-weight-medium);
 	display: flex;
@@ -540,7 +759,7 @@ footer select {
 	transition: all .15s ease-in 0s;
 	height: 2.125rem;
 	width: 100%;
-	font-family: 'Helvetica Neue';
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	font-size: .875rem;
 	font-weight: var(--font-weight-medium);
 }

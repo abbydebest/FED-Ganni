@@ -22,7 +22,7 @@ Rood
 
 #### Je focus:
 
-Surface plane
+Surface plane (en responsive als ik eraan toekom)
 
 </details>
 

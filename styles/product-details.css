@@ -1,0 +1,501 @@
+/* ////////////////////// */
+/* 🎧🎧🎧 CSS REMEDY 🎧🎧🎧 */
+/* ////////////////////// */
+*, *::after, *::before {
+    box-sizing:border-box;  
+  }
+  
+  /* ///////////////////////////// */
+  /* 💻💻💻 CUSTOM PROPERTIES 💻💻💻 */
+  /* ///////////////////////////// */
+  :root {
+      /* startje */
+      --color-text:#000000;
+      --color-background:#ffffff;
+      --accent-color: #F1F1F1;
+      --font-weight-medium: 450;
+  }
+  
+  /* Toepassen op hele website(zoveel mogelijk) */
+  a {
+      text-decoration: none;
+  }
+  
+  a:visited {
+      color: var(--color-text);
+  }
+  
+  ul,
+  li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+  
+  body,
+  h2,
+  h4,
+  button {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+      font-weight: var(--font-weight-medium);
+      color: var(--color-text);
+      font-size: .8750rem;
+      text-transform: uppercase;
+  }
+  
+  h3,
+  h5 {
+      margin: 0;
+      padding: 0;
+      font-size: 2.8125rem;
+      font-weight: var(--font-weight-medium);
+  }
+  
+  h6 {
+      margin: 0;
+      padding: 0;
+      font-size: 1.375rem;
+      text-transform: none;
+      font-weight: var(--font-weight-medium);
+  }
+  
+  header {
+      width: 100vw;
+  }
+  
+  button {
+      border: none;
+      background-color: transparent;
+  }
+  
+  /* /////////////////// */
+  /* 🎞️🎞️🎞️ TICKER 🎞️🎞️🎞️ */
+  /* /////////////////// */
+  
+  header section.ticker {
+      height: auto;
+      width: 100%;
+      background-color: var(--accent-color);
+      overflow: hidden;
+      position: relative;
+  }
+  
+  header section.ticker section:last-of-type {
+      display: grid;
+      z-index: 1;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 9%;
+      position: absolute;
+      align-items: center;
+      background: linear-gradient(-90deg,var(--header-slot-bg,#F1F1F1),var(--header-slot-bg,#F1F1F1),var(--header-slot-bg,#F1F1F1),transparent);
+  }
+  
+  header section.ticker button {
+      width: 100%;
+      height: 100%;
+  }
+  
+  header section.ticker button img {
+      width: 1rem;
+      height: 1rem;
+      
+  }
+  
+  header section.wrapper {
+      width: 100vw;
+      padding: 0 0 0 100%;
+      background-color: transparent;
+      position: relative;
+  }
+  
+  /* TICKER ANIMATION */
+  @keyframes ticker {
+      0% {
+          transform: translate3d(0, 0, 0);
+      }
+      100% {
+          transform: translate3d(-100%, 0, 0);
+      }
+  }
+  
+  header article.transition {
+      display: inline-block;
+      white-space: nowrap;
+      padding: 0 100% 0 0;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: ticker;
+      animation-duration: 20s;
+  }
+  
+  header article.transition:hover {
+      animation-play-state: paused;
+      cursor: pointer;
+  }
+  
+  header p {
+      display: inline-block;
+      margin: 0;
+      padding: .5rem .313rem .313rem .313rem;
+      font-size: .75rem;
+  }
+  
+  nav ul.menu-small {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: .4rem .625rem .635rem .625rem;
+  }
+  
+  nav ul.menu-small li:first-of-type img,
+  nav section:last-of-type article ul:first-of-type li:first-of-type img {
+      height: 1.75rem;
+      width: auto;
+  }
+  
+  @media (max-width: 48em) {
+      nav > ul > li {
+          display: none;
+      }
+      nav > ul > li:first-child,
+      nav > ul > li:nth-of-type(10),
+      nav > ul > li:last-child {
+          display: inline-block;
+      }
+      /* search */
+      nav > ul > li:last-child {
+          flex-grow: 1;
+          flex-basis: 100%;
+      }
+  }
+  
+  .icons {
+      flex-wrap: nowrap;
+  }
+  
+  nav ul.icons{
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+  }
+  
+  nav ul.icons li:first-of-type a img, 
+  nav ul.icons li:first-of-type button img {
+  height: 1.438rem;
+  width: 1.438rem;
+  }
+  
+  nav ul.icons li a img,
+  nav ul.icons li button img {
+      height: 1.25rem;
+      width: 1.25rem;
+      }
+  
+  nav > ul.menu-small > li:last-child {
+      background-color: var(--color-background);
+      border: 1px solid #000000;
+      padding: .5rem .65rem .375rem .438rem;
+      margin: .5rem 0 0 0;
+  }
+  
+  form {
+      color: #bcbcbc;
+      font-size: 1.375rem;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  form img,
+  nav section:first-of-type ul li img {
+      width: auto;
+      height: 1.563rem;
+  }
+  
+  nav section:first-of-type.hidden,
+  nav section:last-of-type.hidden {
+      display: none;
+  }
+  
+  /* Search bar open */
+  nav section:first-of-type {
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0,0,0,.35);
+      padding: 0;
+      position: fixed;
+      display: block;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: 3;
+  }
+  
+  nav section:first-of-type p {
+      font-size: .875rem;
+      padding: 0;
+  }
+  
+  nav section:first-of-type a {
+      font-size: 1.375rem;
+  }
+  
+  nav section:first-of-type article {
+      background-color: var(--color-background);
+      width: 100vw;
+      height: fit-content;
+      padding: .5rem .625rem 1.25rem .625rem;
+  }
+  
+  nav section:first-of-type article ul:first-of-type {
+      display: flex;
+      gap: .5rem;
+      align-items: center;
+  }
+  
+  nav section:first-of-type article ul:nth-of-type(2),
+  nav section:first-of-type article ul:last-of-type {
+      margin: 2.5rem 0 0 0;
+  }
+  
+  nav section:first-of-type article ul:first-of-type li:first-of-type {
+      flex-grow: 1;
+  }
+  
+  nav section:first-of-type article ul:first-of-type li:first-of-type input {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      padding: 0;
+      width: 100%;
+      height: 1.688rem;
+      font-size: 1.375rem;
+      font-weight: var(--font-weight-medium);
+      font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      box-shadow: none;
+      text-shadow: none;
+  }
+  
+  nav section:first-of-type article ul:first-of-type li:first-of-type input::placeholder{
+      color: #bcbcbc;
+  }
+  
+  /* Menu open */
+  nav section:last-of-type {
+      width: 100vw;
+      height: 100vh;
+      display: block;
+      position: fixed;
+      z-index: 2;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      padding: .63rem;
+      background-color: rgba(0,0,0,.35);
+  }
+  
+  nav section:last-of-type article {
+      background-color: var(--color-background);
+      display: grid;
+      width: 100%;
+      height: fit-content;
+      padding: 1.25rem;
+      position: relative;
+  }
+  
+  nav section:last-of-type article ul {
+      display: flex;
+      align-self: end;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+  }
+  
+  nav section:last-of-type article ul:nth-of-type(2) {
+      font-size: 2.25rem;
+      line-height: 1;
+      margin: 2rem 0 0 0;
+  }
+  
+  nav section:last-of-type article ul:nth-of-type(2) li {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      width: 100%;
+  }
+  
+  nav section:last-of-type article ul:nth-of-type(2) a:nth-of-type(2) {
+      position: absolute;
+      right: 0;
+      top: 30%;
+      transform: translate(-auto,-50%);
+      border-bottom:7px solid transparent;border-left:7px solid #000;border-top:7px solid transparent;content:"";height:0;width:0
+  }
+  
+  nav section:last-of-type article ul:nth-of-type(2) li:last-of-type a:first-of-type {
+      color: #ED0000;
+  }
+  
+  nav section:last-of-type article ul:last-of-type {
+      gap: 1.25rem;
+      margin: 3.167rem 0 0 0;
+  }
+  
+  nav section:last-of-type article button {
+      position: absolute;
+      right: .625rem;
+      top: .625rem;
+  }
+  
+  nav section:last-of-type article button img {
+      width: 3.25rem;
+      height: 3.25rem;
+  }
+
+/* /////////////////////////// */
+/* 🐆🐆🐆 PRODUCT BANNER 🐆🐆🐆 */
+/* /////////////////////////// */
+
+section.product-banner {
+    width: 100%;
+    height: 100%;
+}
+
+section.product-banner img {
+    width: 100vw;
+    height: 100%;
+}
+  
+/* /////////////////// */
+/* 👋🏼👋🏼👋🏼 FOOTER 👋🏼👋🏼👋🏼 */
+/* /////////////////// */
+
+footer {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+footer ul {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+footer ul li ul {
+	padding: 2.5rem .625rem 0 .625rem;
+	gap: .375rem;
+}
+
+footer ul li ul.align {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	padding: 1.25rem 0 0 0;
+}
+
+footer ul.align li a {
+	display: flex;
+	align-items: center;
+}
+
+footer ul.bcorp li a {
+	display: flex;
+	flex-direction: column;
+}
+
+footer ul.bcorp li a img {
+	width: 4.063rem;
+	height: auto;
+}
+
+footer ul.align,
+footer li.accentcolor {
+	background-color: var(--accent-color);
+}
+
+footer p {
+	text-transform: none;
+	font-size: .75rem;
+}
+
+input.email {
+	border: none;
+    outline: none;
+	transition: all .15s ease-in 0s;
+	box-shadow: none;
+	padding: .625rem .625rem .625rem 0;
+	height: 2.75rem;
+	width: 100%;
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-size: 1.25rem;
+	font-weight: var(--font-weight-medium);
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--accent-color);
+	
+}
+
+input.submit {
+	background-image: url(/images/Arrowright.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	display: block;
+	width: .875rem;
+	height: auto;
+	padding: 0;
+}
+
+footer li.accentcolor ul li:nth-of-type(2) {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid var(--color-text);
+	text-align: center;
+}
+
+footer label {
+	text-transform: none;
+	font-size: .75rem;
+}
+
+footer li.country,
+footer li.language {
+	display: flex;
+	flex-direction: column;
+}
+
+footer li.language {
+	margin: 1.125rem 0 0 0;
+}
+
+footer select {
+	box-shadow: none;
+	border: none;
+	border-bottom: 1px solid var(--color-text);
+	transition: all .15s ease-in 0s;
+	height: 2.125rem;
+	width: 100%;
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-size: .875rem;
+	font-weight: var(--font-weight-medium);
+}
+
+footer ul.socials {
+	flex-direction: row;
+	gap: 2rem;
+}
+
+footer ul.socials img {
+	width: 1.25rem;
+	height: auto;
+}
