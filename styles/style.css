@@ -61,6 +61,10 @@ h6 {
 	font-weight: var(--font-weight-medium);
 }
 
+/* /////////////////// */
+/* 🪩🪩🪩 HEADER 🪩🪩🪩 */
+/* /////////////////// */
+
 header {
 	width: 100vw;
 }
@@ -143,6 +147,10 @@ header p {
 	padding: .5rem .313rem .313rem .313rem;
 	font-size: .75rem;
 }
+
+/* /////////////////////// */
+/* 🌶️🌶️🌶️ NAVIGATION 🌶️🌶️🌶️ */
+/* /////////////////////// */
 
 nav ul.menu-small {
 	display: flex;

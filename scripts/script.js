@@ -17,8 +17,9 @@ var hamburgerButton = document.querySelector(".hamburger");
 var afsluitenButton = document.querySelector(".afsluiten");
 var menuOpen = document.querySelector("#menu-open");
 
-// 
-// 
+// ///////////////////////////////
+// 🥡🥡🥡 SEARCH BAR OPENEN 🥡🥡🥡
+// ///////////////////////////////
 
 console.log(zoekbalk);
 
