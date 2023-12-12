@@ -88,41 +88,42 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 
 ### wellicht nog een dynamisch deel (bijv filter):
 
-  <img src="readme-images/" width="375px" alt="breakdown van nog een dynamisch deel">
-
 </details>
 
 ## Voortgang 1 (week 2)
 
 <details>
   <summary>Uitwerken voor 1<sup>e</sup> voortgang</summary>
-Deel menu hidden bij klein scherm, list items ging niet helemaal goed, > gebruiken
+Deel menu hidden bij klein scherm, list items ging niet helemaal goed, > gebruiken om specifieker te maken
 
 ### Stand van zaken
 
 Dit ging goed:
-Het meteen structureren van mijn bestanden, tijdens het coderen.
-De flexbox oefeningen gingen me erg makkelijk af, die kennis heb ik goed onthouden van vorig jaar.
-GitHub repositories problemen kunnen oplossen.
+<ul>
+  <li>Het meteen structureren van mijn bestanden, tijdens het coderen.</li>
+  <li>De flexbox oefeningen gingen me erg makkelijk af, die kennis heb ik goed onthouden van vorig jaar.</li>
+  <li>GitHub repositories problemen kunnen oplossen.</li>
+</ul>
 
 Dit was lastig:
-Mijn kennis van coderen was/is erg weggezakt. Op gang komen was hierdoor ook erg moeilijk. Verder had ik eigenlijk alleen maar kleine en praktische vragen die ik heb gesteld of opgezocht.
+<ul>
+  <li>Mijn kennis van coderen was/is erg weggezakt. Op gang komen was hierdoor ook erg moeilijk.</li>
+  <li>Verder had ik eigenlijk alleen maar kleine en praktische vragen die ik heb gesteld of opgezocht.</li>
+</ul>
 
-(neem ook screenshots op van delen van je website en code)
+Bij de eerste les had en een menu gemaakt bestaande uit meerdere unordered lists. Na feedback en mijn uitleg dat ik dit handiger kon indelen om te bereiken wat ik wilde, werd me aangeraden unordered lists te nesten in de li van een unordered list(zie screenshot hieronder). Hierna wilde ik een deel van de list items, met daarin een ul, graag verbergen wanneer het scherm smal is. Om dit te doen heb ik het @media attribuut gebruikt. Wanneer ik de li probeerde te selecteren door nav ul li verdwenen niet alle items die ik wilde. Uiteindelijk heb ik dit opgelost door de directe kinderen van de ul te selecteren in @media met >. 
+<img src="/images/progress/Week2-verbeterd-menu.png">
 
 ### Agenda voor meeting
 
 Vragen:
 <ul>
-<li>Hoe menu beter/handiger indelen?</li>
-<li>Hoe ook alweer typografie op hele bestand toepassen?</li>
-<li>Hoe ook alweer geen margin en padding op hele bestand toepasseen?</li>
+  <li>Hoe menu beter/handiger indelen?</li>
+  <li>Hoe ook alweer typografie op hele bestand toepassen?</li>
+  <li>Hoe ook alweer geen margin en padding op hele bestand toepasseen?</li>
 </ul>
 
 ### Verslag van meeting
-
-<img src="/images/progress/Week1-begin-eerstemenu.png">
-<img src="/images/progress/Week2-verbeterd-menu.png">
 
 </details>
 
@@ -139,17 +140,23 @@ Vragen:
 
 ### Stand van zaken
 
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Dit ging goed:
+<ul>
+  <li>Het toevoegen van de rest van de html ging best snel en mijn website was daardoor snel gevuld.</li>
+  <li>Het toepassen van grid ging me vrij makkelijk af.</li>
+  <li></li>
+</ul>
+
+Het toepassen van grid op de 'banner'.
+<img src="/readme-images/BannerGrid.png">
+<img src="/readme-images/ScreenshotGrid.png">
+
+Dit was lastig:
 
 ### Agenda voor meeting
 
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| -------------- | ------------------ | ------------ | ---------------- |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
 
 ### Verslag van meeting
 
