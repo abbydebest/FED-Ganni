@@ -78,11 +78,11 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 <details>
   <summary>Uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-### de hele pagina:
+### De hele pagina:
 
   <img src="readme-images/FED_Ganni_breakdown_AbbydeBest.png" width="375px" alt="breakdown van de hele pagina">
 
-### dynamisch deel (bijv menu):
+### Dynamisch deel (bijv menu):
 
   <img src="readme-images/screenshot-ganni-newin.png" width="375px" alt="breakdown van een dynamisch deel">
 
