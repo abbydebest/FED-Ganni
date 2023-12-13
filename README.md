@@ -114,7 +114,8 @@ Dit was lastig:
   <li>Verder had ik eigenlijk alleen maar kleine en praktische vragen die ik heb gesteld of opgezocht.</li>
 </ul>
 
-Bij de eerste les had en een menu gemaakt bestaande uit meerdere unordered lists. Na feedback en mijn uitleg dat ik dit handiger kon indelen om te bereiken wat ik wilde, werd me aangeraden unordered lists te nesten in de li van een unordered list(zie screenshot hieronder). Hierna wilde ik een deel van de list items, met daarin een ul, graag verbergen wanneer het scherm smal is. Om dit te doen heb ik het @media attribuut gebruikt. Wanneer ik de li probeerde te selecteren door nav ul li verdwenen niet alle items die ik wilde. Uiteindelijk heb ik dit opgelost door de directe kinderen van de ul te selecteren in @media met >. 
+Bij de eerste les had en een menu gemaakt bestaande uit meerdere unordered lists. Na feedback en mijn uitleg dat ik dit handiger kon indelen om te bereiken wat ik wilde, werd me aangeraden unordered lists te nesten in de li van een unordered list(zie screenshot hieronder). Hierna wilde ik een deel van de list items, met daarin een ul, graag verbergen wanneer het scherm smal is. Om dit te doen heb ik het @media attribuut gebruikt. Wanneer ik de li probeerde te selecteren door nav ul li verdwenen niet alle items die ik wilde. Uiteindelijk heb ik dit opgelost door de directe kinderen van de ul te selecteren in @media met >.
+<img src="/readme-images/IMG_6469.JPG">
 <img src="/images/progress/Week2-verbeterd-menu.png">
 
 ### Agenda voor meeting
@@ -175,7 +176,7 @@ Uiteindelijk heb ik bij de 'Shop now stukjes met pijltjes iconen' de section waa
 <img src="/readme-images/ShopnowA.png">
 
 Online kon ik niet vinden hoe ik op een simpele manier een carousel kon maken met navigatie buttons met html, css, en javascript. Ik had mijn docent om een manier gevraagd en hij tekende het volgende tijdens de les:
-<img src="/readme-images">
+<img src="/readme-images/IMG_6468.JPG">
 Tijdens de les begreep ik het helemaal, alleen toen ik er eenmaal thuis mee aan de slag ging wist ik niet meer hoe het moest en zag ik het niet meer. 😂🥲😅
 
 Ik heb in de section 'gallery' een zelfde carousel gezet. Deze nam alleen niet dezelfde opmaak aan als de eerste carousel omdat hij nog in een section staat. Uiteindelijk heb ik deze tweede carousel opnieuw en spicifieker geselecteerd en dezelfde CSS opmaak gegeven.
