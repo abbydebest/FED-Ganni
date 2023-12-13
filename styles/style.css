@@ -45,6 +45,14 @@ button {
 	text-transform: uppercase;
 }
 
+h2:hover {
+	color: var(--color-background);
+}
+
+/* h2:hover img {
+	filter: ;
+} */
+
 h3,
 h5 {
 	margin: 0;
@@ -433,6 +441,12 @@ a.shop {
 	margin: 2.5rem 0 0 0;
 }
 
+a.shop:hover {
+	background-color: var(--color-text);
+	color: var(--color-background);
+	width: fit-content;
+}
+
 /* Grootte van pijltje */
 a.shop img,
 section.gallery a.shop img,
@@ -566,6 +580,17 @@ article.slides article button:nth-of-type(2),
 section.gallery a p {
 	background-color: var(--color-background);
 	border: 1px solid var(--color-text);
+	font-size: .875rem;
+	padding: 12px;
+	text-align: start;
+	margin: 0;
+}
+
+article.slides article button:nth-of-type(2):hover,
+section.gallery a p:hover {
+	background-color: var(--color-text);
+	border: 1px solid var(--color-text);
+	color: var(--color-background);
 	font-size: .875rem;
 	padding: 12px;
 	text-align: start;
